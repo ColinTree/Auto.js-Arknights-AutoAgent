@@ -1,0 +1,17 @@
+{
+    "assets": [
+      "config.json",
+      "project.json",
+      "全员信赖.png",
+      "升级.png",
+      "开始1.png",
+      "开始2.png",
+      "评星.png",
+      "购买理智.png"
+    ],
+    "main": "main.js",
+    "name": "明日方舟自动代理",
+    "packageName": "cn.colintree.autojs.arknights",
+    "versionCode": 3,
+    "versionName": "1.2.0"
+  }
