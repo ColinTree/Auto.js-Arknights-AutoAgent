@@ -12,6 +12,6 @@
     "main": "main.js",
     "name": "明日方舟自动代理",
     "packageName": "cn.colintree.autojs.arknights",
-    "versionCode": 3,
-    "versionName": "1.2.0"
+    "versionCode": 121,
+    "versionName": "1.2.1"
   }
