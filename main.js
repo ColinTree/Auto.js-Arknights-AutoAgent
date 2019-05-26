@@ -115,6 +115,7 @@ function runConfig(config) {
     if (pointer >= config.length || pointer < 0) {
       pointer = 0
     }
+    sleep(3000)
   }
 }
 
