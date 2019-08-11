@@ -19,6 +19,7 @@ if (device.width / device.height > 1) {
   console.error('请将模拟器调为竖屏模式（手机模式），推荐分辨率720*1280，当前', device.width, '*', device.height)
   exit()
 }
+const FACTOR = device.width / 720
 
 function capture() {
   let cap = captureScreen()
@@ -72,7 +73,8 @@ function findAndClick(config) {
   let imgs = {}
   for (var i in match) {
     let fileName = match[i].name
-    imgs[i] = images.read(BASE + fileName + '.png')
+    let img = images.read(BASE + fileName + '.png')
+    imgs[i] = images.scale(img, FACTOR, FACTOR)
     if (imgs[i] === null) {
       toast(fileName + '无法被读取')
       console.error(fileName, '无法被读取')
